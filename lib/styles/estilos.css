@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Satisfy&family=Seymour+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active,
+li a:hover {
+    background: #000090;
+    transition: .5s;
+    color: #fff;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.img_ppal {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    background-color: #000090;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+section .cuadros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 70px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section .subtit {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 70px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section p b {
+    color: rgb(189, 174, 39)
+}
+
+section .cuadros .cuadro {
+    width: 300px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+}
+
+section .img_ppal img {
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.75);
+}
+
+section .img_ppal img:hover {
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+}
+
+section .cuadros .cuadro:hover {
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 52px 0px rgba(255, 255, 255, 0.75);
+}
+
+section .cuadros .cuadro img {
+    border-radius: 30px;
+}
+
+/* Estilos para Servicios  */
+.tit1 {
+    color: #ddeaf7;
+    font-size: 2em;
+    font-style: normal;
+}
+
+.tit2 {
+    font-size: 1.5em;
+    font-style: normal;
+    color: aqua;
+}
+
+.cuadro .boton{
+    margin-bottom: 30px;
+}
+
+.cuadro .boton a{
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.cuadro .boton a:hover{
+    color:#000090;
+    background-color: #fff;
+}
+
+
+/* Estilos para el formulario de reservas  */
+
+.cuadros form .datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadros form .datos span {
+    color: #fff;
+    font-family: "Satisfy", cursive;
+    font-size: 2.5em;
+    font-style: normal;
+}
+
+.cuadros form .datos label {
+    color: #fff;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.cuadros form .datos input{
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.label_correo{
+    margin-top: 10px;
+}
+
+select{
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+.cuadros form .datos input[type=email] {
+    width: 100%;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boton_enviar {
+    text-align: center;
+}
+
+.cuadros form .datos input[type=submit],
+button,
+.boton_enviar input[type=submit] {
+    padding: 5px 15px;
+    border: 1px solid black;
+    font-size: 1.5em;
+    border-radius: 12px;
+}
+
+.cuadros form .datos input[type=submit]:hover,
+button:hover,
+.boton_enviar input[type=submit]:hover {
+    cursor: pointer;
+    background: #000;
+    transition: .5s;
+    color: #fff;
+}
+
+/* Estilos para formulario de contacto  */
+.form_contacto {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+}
+
+.form_contacto .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form_contacto input,
+.form_contacto {
+    margin: 8px auto;
+    font-style: 1.5em;
+    padding: 10px;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    section .cuadros .cuadro {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 858px) {
+    body {
+        height: 100vh;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #000;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: #fff;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
